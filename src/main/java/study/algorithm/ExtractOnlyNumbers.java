@@ -20,7 +20,7 @@ public class ExtractOnlyNumbers {
     public static void main(String[] args) {
         ExtractOnlyNumbers T = new ExtractOnlyNumbers();
         Scanner sc = new Scanner(System.in);
-        String str = sc.next();
+        String str = sc.nextLine();
         System.out.println(T.solution(str));
     }
 
