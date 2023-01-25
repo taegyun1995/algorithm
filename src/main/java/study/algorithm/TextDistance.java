@@ -21,7 +21,7 @@ public class TextDistance {
                 p = 0;
             } else {
                 p++;
-                answer[i] = Math.min(answer[i], p)
+                answer[i] = Math.min(answer[i], p);
             }
         }
 
