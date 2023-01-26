@@ -1,4 +1,4 @@
-package study.algorithm;
+package study.inf.String;
 
 import java.util.ArrayList;
 import java.util.Scanner;
