@@ -1,4 +1,4 @@
-package study.programmers;
+package study.programmers.lv1;
 
 import java.util.Scanner;
 
@@ -24,7 +24,7 @@ public class GetMiddleLetter {
         int a = s.length();
         String word = "";
 
-        if ( a % 2 == 0 )
+        if (a % 2 == 0)
             word = s.substring(a / 2 - 1, (a / 2) + 1);
         else
             word = s.substring((a / 2), (a / 2) + 1);

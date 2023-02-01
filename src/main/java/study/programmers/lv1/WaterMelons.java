@@ -1,4 +1,4 @@
-package study.programmers;
+package study.programmers.lv1;
 
 import java.util.Scanner;
 
@@ -24,7 +24,7 @@ public class WaterMelons {
 //            result += i % 2 == 0 ? "수" : "박";
 //        return result;
 
-        return new String(new char [n/2+1]).replace("\0", "수박").substring(0,n);
+        return new String(new char[n / 2 + 1]).replace("\0", "수박").substring(0, n);
     }
 
     public static void main(String[] args) {

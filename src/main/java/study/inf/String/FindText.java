@@ -9,7 +9,7 @@ public class FindText {
         t = Character.toUpperCase(t);
 
         for (char x : str.toCharArray()) {
-            if(x == t) answer++;
+            if (x == t) answer++;
         }
 
 //        for (int i = 0; i < str.length(); i++) {

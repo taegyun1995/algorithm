@@ -1,4 +1,4 @@
-package study.programmers;
+package study.programmers.lv1;
 
 import java.util.Arrays;
 import java.util.Collections;
