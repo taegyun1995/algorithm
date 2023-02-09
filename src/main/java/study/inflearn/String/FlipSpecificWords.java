@@ -12,11 +12,11 @@ public class FlipSpecificWords {
     }
 
     public String solution(String s) {
-        String answer = "";
         char[] chars = s.toCharArray();
         int lt = 0;
-        int rt = 0;
-        while (lt < rt) {
+        int rt = chars.length - 1;
+
+        while(lt < rt){
             if (!Character.isAlphabetic(chars[lt])) {
                 lt++;
             } else if (!Character.isAlphabetic(chars[rt])) {
@@ -29,9 +29,8 @@ public class FlipSpecificWords {
                 rt--;
             }
         }
-        answer = s;
 
-        return answer;
+        return String.valueOf(chars);
     }
 
 }
