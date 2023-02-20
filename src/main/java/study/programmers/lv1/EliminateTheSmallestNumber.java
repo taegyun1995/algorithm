@@ -1,5 +1,7 @@
 package study.programmers.lv1;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class EliminateTheSmallestNumber {
@@ -12,29 +14,25 @@ public class EliminateTheSmallestNumber {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        System.out.println(t.solution(arr));
+        for (int x : t.solution(arr)) {
+            System.out.print(x + " ");
+        }
     }
 
-    public int[] solution(int[] arr) {
-        if (arr.length == 1) {
-            int[] answer = {-1};
+    public ArrayList<Integer> solution(int[] arr) {
+        ArrayList<Integer> answer = new ArrayList<>();
+        if (arr.length <= 1) {
+            answer.add(-1);
             return answer;
         }
 
-        int[] answer = new int[arr.length - 1];
-        int minIndex = 0;
-
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[minIndex] > arr[i]) {
-                minIndex = i;
+        int min = Arrays.stream(arr).min().getAsInt();
+        for (int x : arr) {
+            if (x != min) {
+                answer.add(x);
             }
         }
-        for (int i = minIndex + 1; i < arr.length; i++) {
-            arr[i - 1] = arr[i];
-        }
-        for (int i = 0; i < answer.length; i++) {
-            answer[i] = arr[i];
-        }
+
         return answer;
     }
 
