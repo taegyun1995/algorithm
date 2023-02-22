@@ -3,10 +3,10 @@ package study.baekjoon.lv1;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class FourArithmeticOperations {
+public class _06FourArithmeticOperations {
 
     public static void main(String[] args) {
-        FourArithmeticOperations t = new FourArithmeticOperations();
+        _06FourArithmeticOperations t = new _06FourArithmeticOperations();
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();

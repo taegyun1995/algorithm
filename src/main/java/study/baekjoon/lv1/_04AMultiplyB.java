@@ -2,10 +2,10 @@ package study.baekjoon.lv1;
 
 import java.util.Scanner;
 
-public class APlusB {
+public class _04AMultiplyB {
 
     public static void main(String[] args) {
-        APlusB t = new APlusB();
+        _04AMultiplyB t = new _04AMultiplyB();
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
@@ -13,7 +13,7 @@ public class APlusB {
     }
 
     public int solution(int a, int b) {
-        return a + b;
+        return a * b;
     }
 
 }

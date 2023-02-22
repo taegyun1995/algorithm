@@ -2,10 +2,10 @@ package study.baekjoon.lv1;
 
 import java.util.Scanner;
 
-public class Thailand {
+public class _08Thailand {
 
     public static void main(String[] args) {
-        Thailand t = new Thailand();
+        _08Thailand t = new _08Thailand();
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         System.out.println(t.solution(a));

@@ -2,10 +2,10 @@ package study.baekjoon.lv1;
 
 import java.util.Scanner;
 
-public class AMinusB {
+public class _02APlusB {
 
     public static void main(String[] args) {
-        AMinusB t = new AMinusB();
+        _02APlusB t = new _02APlusB();
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
@@ -13,7 +13,7 @@ public class AMinusB {
     }
 
     public int solution(int a, int b) {
-        return a - b;
+        return a + b;
     }
 
 }

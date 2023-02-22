@@ -2,10 +2,10 @@ package study.baekjoon.lv1;
 
 import java.util.Scanner;
 
-public class Remainder {
+public class _09Remainder {
 
     public static void main(String[] args) {
-        Remainder t = new Remainder();
+        _09Remainder t = new _09Remainder();
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();

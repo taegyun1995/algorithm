@@ -2,10 +2,10 @@ package study.baekjoon.lv1;
 
 import java.util.Scanner;
 
-public class Surprised {
+public class _07Surprised {
 
     public static void main(String[] args) {
-        Surprised t = new Surprised();
+        _07Surprised t = new _07Surprised();
         Scanner sc = new Scanner(System.in);
         String s = sc.next();
         System.out.println(t.solution(s));
