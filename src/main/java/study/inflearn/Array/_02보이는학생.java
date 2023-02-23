@@ -2,10 +2,10 @@ package study.inflearn.Array;
 
 import java.util.Scanner;
 
-public class VisibleStudent {
+public class _02보이는학생 {
 
     public static void main(String[] args) {
-        VisibleStudent T = new VisibleStudent();
+        _02보이는학생 T = new _02보이는학생();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[n];
@@ -17,13 +17,14 @@ public class VisibleStudent {
 
     public int solution(int n, int[] arr) {
         int cnt = 1;
-        int tmp = arr[0];
+        int min = arr[0];
         for (int i = 1; i < n; i++) {
-            if (tmp < arr[i]) {
+            if (min < arr[i]) {
                 cnt++;
-                tmp = arr[i];
+                min = arr[i];
             }
         }
+        
         return cnt;
     }
 
