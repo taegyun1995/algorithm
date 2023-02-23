@@ -2,10 +2,12 @@ package study.inflearn.String;
 
 import java.util.Scanner;
 
-public class CaseConversion {
+import static java.lang.Character.*;
+
+public class _02대소문자변환 {
 
     public static void main(String[] args) {
-        CaseConversion t = new CaseConversion();
+        _02대소문자변환 t = new _02대소문자변환();
         Scanner sc = new Scanner(System.in);
         String s = sc.next();
         System.out.println(t.solution(s));
@@ -14,10 +16,10 @@ public class CaseConversion {
     public StringBuilder solution(String s) {
         StringBuilder sb = new StringBuilder();
         for (char aChar : s.toCharArray()) {
-            if (Character.isUpperCase(aChar)) {
-                sb.append(Character.toLowerCase(aChar));
+            if (isUpperCase(aChar)) {
+                sb.append(toLowerCase(aChar));
             } else {
-                sb.append(Character.toUpperCase(aChar));
+                sb.append(toUpperCase(aChar));
             }
         }
         return sb;
