@@ -3,10 +3,10 @@ package study.inflearn.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class OutputLargeNumber {
+public class _01큰수출력하기 {
 
     public static void main(String[] args) {
-        OutputLargeNumber t = new OutputLargeNumber();
+        _01큰수출력하기 t = new _01큰수출력하기();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[n];
@@ -22,7 +22,7 @@ public class OutputLargeNumber {
         ArrayList<Integer> answer = new ArrayList<>();
         answer.add(arr[0]);
         for (int i = 1; i < n; i++) {
-            if (arr[i] > arr[i - 1]) {
+            if (arr[i - 1] < arr[i]) {
                 answer.add(arr[i]);
             }
         }
