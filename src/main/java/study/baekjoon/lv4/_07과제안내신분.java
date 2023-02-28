@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class _05과제안내신분 {
+public class _07과제안내신분 {
 
     public static void main(String[] args) {
-        _05과제안내신분 t = new _05과제안내신분();
+        _07과제안내신분 t = new _07과제안내신분();
         Scanner sc = new Scanner(System.in);
         int[] arr = new int[28];
         for (int i = 0; i < 28; i++) {
