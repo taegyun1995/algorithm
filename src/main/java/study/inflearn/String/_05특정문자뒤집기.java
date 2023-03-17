@@ -2,10 +2,10 @@ package study.inflearn.String;
 
 import java.util.Scanner;
 
-public class FlipSpecificWords {
+public class _05특정문자뒤집기 {
 
     public static void main(String[] args) {
-        FlipSpecificWords t = new FlipSpecificWords();
+        _05특정문자뒤집기 t = new _05특정문자뒤집기();
         Scanner sc = new Scanner(System.in);
         String s = sc.next();
         System.out.println(t.solution(s));
@@ -16,7 +16,7 @@ public class FlipSpecificWords {
         int lt = 0;
         int rt = chars.length - 1;
 
-        while(lt < rt){
+        while (lt < rt) {
             if (!Character.isAlphabetic(chars[lt])) {
                 lt++;
             } else if (!Character.isAlphabetic(chars[rt])) {
@@ -30,7 +30,7 @@ public class FlipSpecificWords {
             }
         }
 
-        return String.valueOf(chars);
+        return new String(chars);
     }
 
 }
