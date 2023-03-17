@@ -14,12 +14,13 @@ public class _01문자찾기 {
 
     public int solution(String s, char c) {
         int answer = 0;
-        for (char x : s.toUpperCase().toCharArray()) {
-            if (x == Character.toUpperCase(c)) {
+        char[] chars = s.toUpperCase().toCharArray();
+        for (int i = 0; i < chars.length - 1; i++) {
+            if (chars[i] == Character.toUpperCase(c)) {
                 answer++;
             }
         }
-
+        
         return answer;
     }
 }
