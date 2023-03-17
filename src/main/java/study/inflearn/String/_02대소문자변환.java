@@ -2,7 +2,8 @@ package study.inflearn.String;
 
 import java.util.Scanner;
 
-import static java.lang.Character.*;
+import static java.lang.Character.toLowerCase;
+import static java.lang.Character.toUpperCase;
 
 public class _02대소문자변환 {
 
@@ -13,16 +14,17 @@ public class _02대소문자변환 {
         System.out.println(t.solution(s));
     }
 
-    public StringBuilder solution(String s) {
+    public String solution(String s) {
         StringBuilder sb = new StringBuilder();
-        for (char aChar : s.toCharArray()) {
-            if (isUpperCase(aChar)) {
-                sb.append(toLowerCase(aChar));
+        for (char x : s.toCharArray()) {
+            if (Character.isUpperCase(x)) {
+                sb.append(toLowerCase(x));
             } else {
-                sb.append(toUpperCase(aChar));
+                sb.append(toUpperCase(x));
             }
         }
-        return sb;
+
+        return sb.toString();
     }
 
 }
