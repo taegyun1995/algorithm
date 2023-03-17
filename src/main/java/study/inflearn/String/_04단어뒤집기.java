@@ -1,12 +1,14 @@
 package study.inflearn.String;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
-public class FlipTheWord {
+public class _04단어뒤집기 {
 
     public static void main(String[] args) {
-        FlipTheWord t = new FlipTheWord();
+        _04단어뒤집기 t = new _04단어뒤집기();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         String[] str = new String[n];
@@ -19,11 +21,9 @@ public class FlipTheWord {
     }
 
     public ArrayList<String> solution(int n, String[] str) {
-        ArrayList<String> answer = new ArrayList<>();
-        for (String x : str) {
-            String tmp = new StringBuilder(x).reverse().toString();
-            answer.add(tmp);
-        }
+        ArrayList<String> answer = Arrays.stream(str)
+                                        .map(x -> new StringBuilder(x).reverse().toString())
+                                        .collect(Collectors.toCollection(ArrayList::new));
         return answer;
     }
 
