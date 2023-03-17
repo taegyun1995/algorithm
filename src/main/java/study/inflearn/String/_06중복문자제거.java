@@ -2,23 +2,24 @@ package study.inflearn.String;
 
 import java.util.Scanner;
 
-public class RemoveDuplicateCharacters {
+public class _06중복문자제거 {
 
     public static void main(String[] args) {
-        RemoveDuplicateCharacters t = new RemoveDuplicateCharacters();
+        _06중복문자제거 t = new _06중복문자제거();
         Scanner sc = new Scanner(System.in);
         String s = sc.next();
         System.out.println(t.solution(s));
     }
 
     public String solution(String s) {
-        String answer = "";
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < s.length(); i++) {
             if (s.indexOf(s.charAt(i)) == i) {
-                answer += s.charAt(i);
+                sb.append(s.charAt(i));
             }
         }
-        return answer;
+
+        return sb.toString();
     }
 
 }
