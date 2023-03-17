@@ -2,10 +2,10 @@ package study.inflearn.String;
 
 import java.util.Scanner;
 
-public class PalindromeString {
+public class _07회문문자열 {
 
     public static void main(String[] args) {
-        PalindromeString t = new PalindromeString();
+        _07회문문자열 t = new _07회문문자열();
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         System.out.println(t.solution(str));
@@ -13,10 +13,8 @@ public class PalindromeString {
 
     public String solution(String str) {
         String s = new StringBuilder(str).reverse().toString();
-        if (str.equalsIgnoreCase(s)) {
-            return "YES";
-        }
-        return "NO";
+
+        return str.equalsIgnoreCase(s) ? "YES" : "NO";
     }
 
     public String solution2(String str) {
