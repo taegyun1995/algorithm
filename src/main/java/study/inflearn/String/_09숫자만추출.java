@@ -2,24 +2,25 @@ package study.inflearn.String;
 
 import java.util.Scanner;
 
-public class ExtractOnlyNumbers {
+public class _09숫자만추출 {
 
     public static void main(String[] args) {
-        ExtractOnlyNumbers t = new ExtractOnlyNumbers();
+        _09숫자만추출 t = new _09숫자만추출();
         Scanner sc = new Scanner(System.in);
         String s = sc.next();
-        System.out.println(t.solution2(s));
+        System.out.println(t.solution(s));
     }
 
     public int solution(String s) {
-        String answer = "";
+        StringBuilder sb = new StringBuilder();
+
         char[] chars = s.toCharArray();
         for (char x : chars) {
             if (Character.isDigit(x)) {
-                answer += x;
+                sb.append(x);
             }
         }
-        return Integer.parseInt(answer);
+        return Integer.parseInt(sb.toString());
     }
 
     public int solution2(String s) {
