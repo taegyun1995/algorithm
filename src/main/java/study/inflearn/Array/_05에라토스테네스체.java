@@ -11,16 +11,24 @@ public class _05에라토스테네스체 {
         System.out.println(T.solution(n));
     }
 
+    public boolean isPrime(int n) {
+        if (n <= 1) {
+            return false;
+        }
+
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
     public int solution(int n) {
         int tmp = 0;
         for (int i = 2; i <= n; i++) {
-            int cnt = 0;
-            for (int j = 1; j <= i; j++) {
-                if (i % j == 0) {
-                    cnt++;
-                }
-            }
-            if (cnt == 2) {
+            if (isPrime(i)) {
                 tmp++;
             }
         }
