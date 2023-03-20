@@ -3,10 +3,10 @@ package study.inflearn.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class InvertedDecimal {
+public class _06뒤집은소수 {
 
     public static void main(String[] args) {
-        InvertedDecimal T = new InvertedDecimal();
+        _06뒤집은소수 T = new _06뒤집은소수();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[n];
@@ -32,20 +32,18 @@ public class InvertedDecimal {
 
     public ArrayList<Integer> solution(int n, int[] arr) {
         ArrayList<Integer> answer = new ArrayList<>();
+        ArrayList<Integer> result = new ArrayList<>();
         for (int i = 0; i < n; i++) {
-            int tmp = arr[i];
-            int res = 0;
-            while (tmp > 0) {
-                int t = tmp % 10;
-                res = res * 10 + t;
-                tmp = tmp / 10;
-            }
-            if (isPrime(res)) {
-                answer.add(res);
+            StringBuilder sb = new StringBuilder(String.valueOf(arr[i])).reverse();
+            answer.add(Integer.parseInt(sb.toString()));
+        }
+        for (Integer x : answer) {
+            if (isPrime(x)) {
+                result.add(x);
             }
         }
 
-        return answer;
+        return result;
     }
 
 }
