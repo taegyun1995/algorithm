@@ -2,10 +2,10 @@ package study.inflearn.String;
 
 import java.util.Scanner;
 
-public class ValidPalindrome {
+public class _08유효한펠린드롬 {
 
     public static void main(String[] args) {
-        ValidPalindrome t = new ValidPalindrome();
+        _08유효한펠린드롬 t = new _08유효한펠린드롬();
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
         System.out.println(t.solution(s));
@@ -17,7 +17,6 @@ public class ValidPalindrome {
         if (s.equals(tmp)) {
             return "YES";
         }
-
 
         return "NO";
     }
