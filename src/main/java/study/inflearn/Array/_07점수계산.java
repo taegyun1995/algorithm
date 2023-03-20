@@ -2,10 +2,10 @@ package study.inflearn.Array;
 
 import java.util.Scanner;
 
-public class Scoring {
+public class _07점수계산 {
 
     public static void main(String[] args) {
-        Scoring T = new Scoring();
+        _07점수계산 T = new _07점수계산();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[n];
