@@ -1,11 +1,12 @@
 package study.inflearn.Array;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
-public class GetRank {
+public class _08등수구하기 {
 
     public static void main(String[] args) {
-        GetRank t = new GetRank();
+        _08등수구하기 t = new _08등수구하기();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[n];
@@ -17,15 +18,19 @@ public class GetRank {
         }
     }
 
-    public int[] solution(int n, int[] arr) {
-        int[] answer = new int[n];
+    public ArrayList<Integer> solution(int n, int[] arr) {
+        ArrayList<Integer> answer = new ArrayList<>();
+
         for (int i = 0; i < n; i++) {
-            int cnt = 1;
+            int rank = 1;
             for (int j = 0; j < n; j++) {
-                if (arr[j] > arr[i]) cnt++;
+                if (arr[j] > arr[i]) {
+                    rank++;
+                }
             }
-            answer[i] = cnt;
+            answer.add(rank);
         }
+
         return answer;
     }
 
