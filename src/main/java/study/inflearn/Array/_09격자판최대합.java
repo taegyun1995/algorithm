@@ -18,7 +18,7 @@ public class _09격자판최대합 {
     }
 
     public int solution(int n, int[][] arr) {
-        int answer = 0;
+        int answer = Integer.MIN_VALUE;
         int rowSum = 0;
         int colSum = 0;
         int diag1Sum = 0;
@@ -33,7 +33,7 @@ public class _09격자판최대합 {
             }
             answer = Math.max(answer, rowSum);
             answer = Math.max(answer, colSum);
-            
+
             diag1Sum += arr[i][i];
             diag2Sum += arr[i][n - i - 1];
         }
