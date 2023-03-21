@@ -22,6 +22,7 @@ public class _10봉우리 {
 
     public int solution(int n, int[][] arr) {
         int answer = 0;
+
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 boolean flag = true;
@@ -33,6 +34,7 @@ public class _10봉우리 {
                         break;
                     }
                 }
+
                 if (flag) {
                     answer++;
                 }
