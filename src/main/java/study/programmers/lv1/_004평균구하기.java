@@ -21,8 +21,6 @@ public class _004평균구하기 {
     }
 
     public double solution(int[] arr) {
-
-
         return Arrays.stream(arr).average().getAsDouble();
     }
 
