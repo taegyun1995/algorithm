@@ -12,6 +12,7 @@ public class _08정수제곱근판별 {
     }
 
     public long solution(long n) {
+
         return Math.pow((long) Math.sqrt(n), 2) == n ? (long) Math.pow(Math.sqrt(n) + 1, 2) : -1;
     }
 
