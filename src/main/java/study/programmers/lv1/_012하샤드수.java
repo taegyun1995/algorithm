@@ -2,10 +2,10 @@ package study.programmers.lv1;
 
 import java.util.Scanner;
 
-public class HarShadNumber {
+public class _012하샤드수 {
 
     public static void main(String[] args) {
-        HarShadNumber t = new HarShadNumber();
+        _012하샤드수 t = new _012하샤드수();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         System.out.println(t.solution(n));
