@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
+import java.util.stream.IntStream;
 
 public class _013두정수사이의합 {
 
@@ -38,10 +39,7 @@ public class _013두정수사이의합 {
     }
 
     public long sumAtoB(int a, int b) {
-        long sum = 0;
-        for (int i = a; i <= b; i++) {
-            sum += i;
-        }
+        long sum = IntStream.rangeClosed(a, b).asLongStream().sum();
         return sum;
     }
 
