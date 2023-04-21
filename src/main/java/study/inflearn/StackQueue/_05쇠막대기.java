@@ -17,7 +17,6 @@ public class _05쇠막대기 {
     public int solution(String s) {
         int answer = 0;
 
-
         return answer;
     }
 
