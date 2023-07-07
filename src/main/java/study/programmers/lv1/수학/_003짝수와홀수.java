@@ -1,16 +1,15 @@
-package study.programmers.lv1;
+package study.programmers.lv1.수학;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 public class _003짝수와홀수 {
 
     public static void main(String[] args) throws IOException {
         _003짝수와홀수 t = new _003짝수와홀수();
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int n = Integer.parseInt(br.readLine());
+        int n = 3;
+        int n2 = 4;
         System.out.println(t.solution(n));
+        System.out.print(t.solution(n2));
     }
 
     public String solution(int n) {
