@@ -1,4 +1,4 @@
-package study.programmers.lv1;
+package study.programmers.lv1.배열;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -26,6 +26,7 @@ public class _004평균구하기 {
 
     public double solution2(int[] arr) {
         double result = 0;
+
         for (int x : arr) {
             result += x;
         }
