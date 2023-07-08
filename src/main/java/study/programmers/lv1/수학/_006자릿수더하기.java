@@ -1,13 +1,13 @@
-package study.programmers.lv1;
+package study.programmers.lv1.수학;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class _001자릿수더하기 {
+public class _006자릿수더하기 {
 
     public static void main(String[] args) throws IOException {
-        _001자릿수더하기 t = new _001자릿수더하기();
+        _006자릿수더하기 t = new _006자릿수더하기();
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
         System.out.println(t.solution(n));
