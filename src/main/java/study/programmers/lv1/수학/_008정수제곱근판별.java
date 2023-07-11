@@ -1,4 +1,4 @@
-package study.programmers.lv1;
+package study.programmers.lv1.수학;
 
 import java.io.BufferedReader;
 import java.io.IOException;
