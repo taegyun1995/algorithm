@@ -1,24 +1,23 @@
-package study.programmers.lv1;
+package study.programmers.lv1.문자열;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class _007p와y의개수 {
+public class _007문자열내p와y의개수 {
 
     public static void main(String[] args) throws IOException {
-        _007p와y의개수 t = new _007p와y의개수();
+        _007문자열내p와y의개수 t = new _007문자열내p와y의개수();
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String s = br.readLine();
         System.out.println(t.solution(s));
     }
 
     boolean solution(String s) {
-        s = s.toLowerCase();
         int p = 0;
         int y = 0;
-        char[] chars = s.toCharArray();
-        for (char x : chars) {
+
+        for (char x : s.toLowerCase().toCharArray()) {
             if (x == 'p') {
                 p++;
             }
@@ -31,9 +30,9 @@ public class _007p와y의개수 {
     }
 
     boolean solution2(String s) {
-        s = s.toLowerCase();
+        s.toLowerCase();
 
-        return s.chars().filter(e -> 'p' == e).count() == s.chars().filter(e -> 'y' == e).count();
+        return s.chars().filter(e -> 'P' == e).count() == s.chars().filter(e -> 'Y' == e).count();
     }
 
 }
