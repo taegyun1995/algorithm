@@ -13,6 +13,16 @@ public class _002나머지가1이되는수찾기 {
     }
 
     public int solution(int n) {
+        for (int i = 2; i <= n; i++) {
+            if (n % i == 1) {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
+    public int solution2(int n) {
         return IntStream.rangeClosed(2, n)
                 .filter(i -> n % i == 1)
                 .findFirst()
