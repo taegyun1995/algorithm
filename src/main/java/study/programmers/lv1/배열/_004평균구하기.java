@@ -21,18 +21,17 @@ public class _004평균구하기 {
     }
 
     public double solution(int[] arr) {
-        return Arrays.stream(arr).average().getAsDouble();
+        double avg = 0;
+
+        for (int x : arr) {
+            avg += x;
+        }
+
+        return avg / arr.length;
     }
 
     public double solution2(int[] arr) {
-        double result = 0;
-
-        for (int x : arr) {
-            result += x;
-        }
-        result = result / arr.length;
-
-        return result;
+        return Arrays.stream(arr).average().getAsDouble();
     }
 
 }
